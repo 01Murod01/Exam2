@@ -1,0 +1,93 @@
+.header {
+  width: 100%;
+  height: auto;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 54px;
+    .nav {
+      &__list {
+        display: flex;
+        &__item {
+          list-style: none;
+          &-link {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #33323d;
+            text-decoration: none;
+          }
+          .active {
+            color: $text-cyan-color;
+          }
+          &:not(:last-child) {
+            margin-right: 42px;
+          }
+        }
+      }
+    }
+    .burger{
+        display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 376px) {
+    .header {
+        width: 100%;
+        height: auto;
+        .container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 32px;
+          padding-bottom: 40px;
+          margin: 0;
+          .nav {
+            display: none;
+            &__list {
+              display: flex;
+              &__item {
+                list-style: none;
+                &-link {
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 14px;
+                  letter-spacing: 2px;
+                  text-transform: uppercase;
+                  color: #33323d;
+                  text-decoration: none;
+                }
+                .active {
+                  color: $text-cyan-color;
+                }
+                &:not(:last-child) {
+                  margin-right: 42px;
+                }
+              }
+            }
+          }
+          .burger{
+            width: 24px;
+            display: block;
+            span{
+                display: block;
+                width: 100%;
+                height: 1px;
+                background: $text-color;
+                &:not(:last-child){
+                    margin-bottom: 5px;
+                }
+            }
+          }
+        }
+      }
+}

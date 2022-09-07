@@ -1,0 +1,199 @@
+.intro {
+  width: 100%;
+  height: auto;
+  .container {
+    position: relative;
+    z-index: -1;
+    background-image: url(../../images/intro_1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+    margin-bottom: 153px;
+    .intro__left {
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      padding: 36px 55px 0 0;
+      background-color: $bg-color;
+      &-title {
+        font-family: "Ibarra Real Nova";
+        width: 440px;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 50px;
+        letter-spacing: -0.446429px;
+        color: $text-color;
+        margin-bottom: 40px;
+      }
+      &-link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 17px 30px 17px 0px;
+        display: inline-block;
+        text-decoration: none;
+        background: #203a4c;
+        cursor: pointer;
+        &:hover {
+          background: $text-cyan-color;
+          color: black;
+        }
+      }
+      &-link::before {
+        content: url(../../images/button.svg);
+        width: 16px;
+        height: 12px;
+        padding: 18px 46px 18px 16px;
+      }
+    }
+    .intro-right {
+      background: #d8d6d7;
+      width: 495px;
+      height: 371px;
+      position: absolute;
+      top: 81px;
+      left: 260px;
+      background-image: url(../../images/intro_2.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro {
+    .container {
+      width: 89%;
+      padding: 0;
+      position: relative;
+      z-index: -1;
+      background-image: url(../../images/intro_1_tablet.jpg);
+      margin-bottom: 96px;
+      .intro__left {
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        padding: 56px 56px 0 0;
+        background-color: $bg-color;
+        &-title {
+          font-family: "Ibarra Real Nova";
+          font-weight: 700;
+          width: 440px;
+          font-size: 40px;
+          line-height: 42px;
+          letter-spacing: -0.357143px;
+          color: $text-color;
+          margin-bottom: 48px;
+        }
+        &-link {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: #ffffff;
+          padding: 17px 30px 17px 0px;
+          display: inline-block;
+          text-decoration: none;
+          background: #203a4c;
+          &:hover {
+            background: $text-cyan-color;
+            color: black;
+          }
+        }
+        &-link::before {
+          content: url(../../images/button.svg);
+          width: 16px;
+          height: 12px;
+          padding: 18px 46px 18px 16px;
+        }
+
+      }
+      .intro-right {
+        // background: #d8d6d7;
+        width: 492px;
+        height: 274px;
+        position: absolute;
+        top: 95px;
+        left: 85px;
+        background-image: url(../../images/intro_2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .intro {
+    .container {
+      position: relative;
+      z-index: 1;
+      background-image: url(../../images/intro_1_mobile.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 271px;
+      margin-bottom: 96px;
+      .intro__left {
+        position: absolute;
+        bottom: -275px;
+        z-index: 2;
+        padding: 0;
+        background-color: $bg-color;
+        &-title {
+          font-family: "Ibarra Real Nova";
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 42px;
+          letter-spacing: -0.357143px;
+          width: 90%;
+          color: $text-color;
+          margin-bottom: 32px;
+        }
+        &-link {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: #ffffff;
+          padding: 17px 30px 17px 0px;
+          display: inline-block;
+          text-decoration: none;
+          background: #203a4c;
+          &:hover {
+            background: #5FB4A2;;
+            color: black;
+          }
+        }
+        &-link::before {
+          content: url(../../images/button.svg);
+          width: 16px;
+          height: 12px;
+          padding: 18px 46px 18px 16px;
+        }
+      }
+      .intro-right {
+        background: none;
+        // width: 223px;
+        width: 67%;
+        height: 200px;
+        position: absolute;
+        top: 44px;
+        left: 39px;
+        background-image: url(../../images/intro_2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 2;
+      }
+    }
+  }
+}

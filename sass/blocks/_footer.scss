@@ -1,0 +1,113 @@
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: $text-color;
+  .container {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    .footer-logo {
+      display: inline-block;
+      margin: 0;
+      margin-right: 48px;
+    }
+    .footer__list {
+      display: flex;
+      align-items: center;
+      &__item {
+        list-style-type: none;
+        &:not(:last-child) {
+          margin-right: 43px;
+        }
+        &-link {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: #ffffff;
+          text-decoration: none;
+        }
+      }
+    }
+    .messenger__list {
+      display: flex;
+      margin-left: auto;
+      &__item {
+        list-style-type: none;
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+        &-link {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.icon:hover {
+  fill: #5FB4A2;
+}
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 376px) {
+  .footer {
+    width: 100%;
+    height: auto;
+    background-color: $text-color;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-top: 56px;
+      padding-bottom: 56px;
+      text-align: center;
+      .footer-logo {
+        width: 100%;
+        display: inline-block;
+        margin: 0;
+        margin-right: 0px;
+        margin-bottom: 40px;
+      }
+      .footer__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 40px;
+        &__item {
+          width: 100%;
+          list-style-type: none;
+          &:not(:last-child) {
+            margin-bottom: 32px;
+            margin-right: 0px;
+          }
+          &-link {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-decoration: none;
+          }
+        }
+      }
+      .messenger__list {
+        display: flex;
+        margin: auto;
+        &__item {
+          list-style-type: none;
+          &:not(:last-child) {
+            margin-right: 15px;
+          }
+          &-link {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
